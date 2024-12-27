@@ -18225,6 +18225,36 @@ INSERT INTO passenger (f_name, l_name, dob, passport_no) VALUES
 ('Benjamin', 'Gonzalez', '1999-09-09', 'P91234567'),
 ('Bobby "Bland"', 'Blue', '2003-02-14', 'P110732');
 
+-- Fill booking
+
+INSERT INTO booking (flight_id, departure_datetime, passenger_id, booking_date, travel_class, seat_number, carry_on, checked, status, price) VALUES
+('AA 345', '2024-12-04 18:39:00', 1, '2024-11-20 10:15:00', 'Economy', '12A', TRUE, 1, 'Confirmed', 300.00),
+('AA 345', '2024-12-04 18:39:00', 2, '2024-11-21 14:45:00', 'Business', '1C', TRUE, 2, 'Confirmed', 450.00),
+('AA 456', '2024-12-04 18:39:00', 3, '2024-11-22 09:30:00', 'Economy', '14B', FALSE, 0, 'Confirmed', 280.00),
+('AA 4882', '2024-12-10 15:44:00', 4, '2024-11-23 16:50:00', 'Economy', '18F', TRUE, 1, 'Confirmed', 320.00),
+('AA 4890', '2024-12-10 06:00:00', 1, '2024-11-24 08:10:00', 'Business', '2A', TRUE, 2, 'Confirmed', 500.00),
+('AA 567', '2024-12-04 18:39:00', 2, '2024-11-25 12:20:00', 'Economy', '10C', FALSE, 0, 'Confirmed', 270.00),
+('AA 678', '2024-12-04 18:39:00', 3, '2024-11-26 15:30:00', 'Economy', '22D', TRUE, 1, 'Confirmed', 310.00),
+('AA 789', '2024-12-04 18:39:00', 4, '2024-11-27 18:45:00', 'Business', '5E', TRUE, 2, 'Confirmed', 480.00),
+('AA 890', '2024-12-04 18:39:00', 1, '2024-11-28 10:10:00', 'Economy', '13F', FALSE, 0, 'Confirmed', 290.00),
+('AS 1048', '2024-12-10 10:20:00', 2, '2024-11-29 14:30:00', 'Business', '1D', TRUE, 2, 'Confirmed', 550.00),
+('AS 1050', '2024-12-10 17:58:00', 3, '2024-11-30 11:00:00', 'Economy', '24C', TRUE, 1, 'Confirmed', 260.00),
+('AS 1083', '2024-12-10 13:28:00', 4, '2024-12-01 13:40:00', 'Business', '3B', TRUE, 2, 'Confirmed', 470.00),
+('AS 1092', '2024-12-10 15:55:00', 5, '2024-12-02 09:25:00', 'Economy', '17E', FALSE, 0, 'Confirmed', 330.00),
+('AS 1093', '2024-12-10 19:45:00', 6, '2024-12-03 15:15:00', 'Economy', '9D', TRUE, 1, 'Confirmed', 280.00),
+('AS 1109', '2024-12-10 09:00:00', 7, '2024-12-04 07:50:00', 'Business', '2C', TRUE, 2, 'Confirmed', 490.00),
+('AS 1144', '2024-12-10 11:40:00', 8, '2024-12-05 14:20:00', 'Economy', '23A', TRUE, 1, 'Confirmed', 310.00),
+('AS 1147', '2024-12-10 15:54:00', 9, '2024-12-06 11:30:00', 'Business', '4B', FALSE, 0, 'Confirmed', 460.00),
+('AS 1178', '2024-12-10 07:00:00', 10, '2024-12-07 16:10:00', 'Economy', '20C', TRUE, 1, 'Confirmed', 340.00),
+('AS 1147', '2024-12-10 15:54:00', 11, '2024-12-08 12:00:00', 'Economy', '22E', TRUE, 1, 'Confirmed', 280.00),
+('AS 1144', '2024-12-10 11:40:00', 12, '2024-12-08 15:10:00', 'Business', '3C', TRUE, 2, 'Confirmed', 470.00),
+('AA 890', '2024-12-04 18:39:00', 13, '2024-12-08 18:30:00', 'Economy', '12D', FALSE, 0, 'Confirmed', 320.00),
+('AA 567', '2024-12-04 18:39:00', 14, '2024-12-09 10:40:00', 'Business', '5F', TRUE, 2, 'Confirmed', 500.00),
+('AA 678', '2024-12-04 18:39:00', 15, '2024-12-09 14:20:00', 'Economy', '10B', TRUE, 1, 'Confirmed', 280.00),
+('AA 4882', '2024-12-10 15:44:00', 6, '2024-12-09 16:30:00', 'Economy', '18C', FALSE, 0, 'Confirmed', 330.00),
+('AA 678', '2024-12-04 18:39:00', 1, '2024-12-10 07:30:00', 'Economy', '12C', TRUE, 1, 'Confirmed', 290.00),
+('AS 1092', '2024-12-10 15:55:00', 2, '2024-12-10 11:00:00', 'Business', '6D', TRUE, 2, 'Confirmed', 520.00);
+
 -- Fill flights
 
 INSERT INTO flight (`flight_id`,`departure_airport`,`arrival_airport`,`departure_datetime`,`arrival_datetime`,`duration`,`airline_id`,`international`,`tail_no`) VALUES ('AA 345','MSP','AAB','2024-12-04 18:39:00','2024-12-04 23:59:00',180,'AA',1,NULL);
