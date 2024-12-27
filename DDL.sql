@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS airline;
 CREATE DATABASE airline;
 USE airline;
 
@@ -173,19 +172,6 @@ BEGIN
         SET NEW.checked = 0;
     END IF;
 END$$
-
-CREATE PROCEDURE RemoveOldAircraft()
-BEGIN
-    DELETE FROM aircraft
-    WHERE tail_no in (
-		select tail_no
-		from (
-			select tail_no 
-			from aircraft 
-            where manufacturing_year <= (YEAR(NOW()) - 35) 
-		) as old_aircraft
-        );
-END $$
 
 DELIMITER ;
 
