@@ -1,5 +1,5 @@
 # Airline Database
-A flight systems database backend, written primarily for implementation with MySQL. This project was completed through the joint collaboration of Colden Johnson, Michael Cornell, and Ethan 'Cobbe' Deal. This is intended to provide a 'proof of concept' alternative to currently existing airline database systems.
+A flight systems database backend, written primarily for implementation with MySQL. This is intended to provide a 'proof of concept' alternative to currently existing airline database systems.
 
 View our final report here: https://www.overleaf.com/read/crcvgzbmywbm#b8dd37
 
